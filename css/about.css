@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* CSS in "about.css" */
+body {
+    background-color: #f8f9fa;
+}
+
+.about-section {
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-section h1 {
+  color: white;
+    font-size: 4vw;
+    margin-bottom: 10%;
+}
+.about-section h2{
+  font-size: 4vw;
+  color: white;
+}
+.about-section p{
+  font-size: 2vw;
+  color:white;
+}
+
+.line {
+    width: 30%; /* Adjust line width based on card width */
+    margin: 0 auto;
+    height: 2px;
+    background: rgb(255, 255, 255);
+}
+
+
+/* Footer Section Styles */
+.footer {
+    background-color: #251b48;
+    padding: 30px 0;
+    height: 50vh;
+  }
+  
+  .footer h1, .footer h4, .footer h5 {
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  
+  .social-icons img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  .footer-menu li {
+    color: white;
+  
+    font-size: 3vmin;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .footer h3{
+    margin-left: 50px;
+    font-size: 3vmin;
+  }
+  .footer h3 a{
+  
+    text-decoration: none;
+    color: white;
+  }
+  
+/* Bootstrap responsive classes */
+@media (max-width:975px) {
+    .about-section{
+        height: 70vh;
+    }
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+  .about-section{
+    height: 70vh;
+  }
+
+  .footer{
+    height: 120vh;
+  }
+
+}
+@media (max-width:576px) {
+    .about-section{
+        height: 60vh;
+    }
+    .footer{
+        height: 90vh;
+      }
+}
+@media (max-width:375px) {
+    .about-section{
+        height: 60vh;
+    }
+    .footer{
+        height: 110vh;
+    }
+}

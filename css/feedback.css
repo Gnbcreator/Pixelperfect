@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid h1{
+    color: white    ;
+    font-size: 4vw;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.row{
+    height: 60vh;
+}
+.col-md-4{
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    background: #0000001e;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+form{
+    margin: 0 auto;
+    width: 70%;
+}
+form textarea{
+    resize: none;
+}
+
+@media (max-width:768px) {
+    .col-md-4{
+        width: 80%;
+        height: auto;
+    }
+    form{
+        width: 80%; 
+    }
+    .form-group input{
+        border-radius: 5px;
+        height: 50px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+}

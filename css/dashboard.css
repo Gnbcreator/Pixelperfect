@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container-fluid
+{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+.row
+{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+/* side bar */
+.col-md-2
+{
+    border-top: 0.5px solid rgba(128, 128, 128, 0.414);
+    border-right: 0.5px solid rgba(128, 128, 128, 0.414);
+    padding: 0;
+    background: #ffffff;
+    height: 100vh;
+}
+.col-md-2 .navbar
+{
+    display: grid;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.414);
+}
+.col-md-2 .navbar input
+{
+    margin-left: 10.5px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    height: 70%;
+    background: #00000007;
+    border: none;
+}
+
+.profile
+{
+    padding: 10.5px;
+    display: flex;
+    align-items: center;
+}
+.profile h6
+{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+.row1
+{
+    display: flex;
+    height: 19%;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.414);
+}
+.side-links
+{
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.active-links
+{
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.active-links a
+{
+    color: rgb(0, 0, 0);
+    font-size: 2.5vmin;
+    text-decoration: none;
+}
+.row2
+{
+    display: flex;
+    height: 19%;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.414);
+}
+.row3
+{
+    display: flex;
+}
+.more
+{
+    height: 40vh;
+}
+.navbar .card
+{
+    margin-top: 200px;
+    position: absolute;
+    background: rgb(255, 249, 249);
+    margin-left: 10px;
+    width: 90%;
+    height: 25vh;
+}
+.card h6
+{
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    font-size: 2vmin;
+}
+.card button
+{
+    font-weight: 500;
+    color: black;
+    border: none;
+    background: aqua;
+    padding: 5px;
+    width: 70%;
+    border-radius: 5px;
+}
+/* layout */
+.col-md-10
+{
+    background: #ffffff;
+    padding: 0;
+}
+#layout
+{
+    border-top: 0.5px solid rgba(128, 128, 128, 0.414);
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.414);
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgb(255, 255, 255);
+}
+.navbar-brand
+{
+    padding-top: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+.navbar-brand .col-md-9
+{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.navbar-brand .col-md-3
+{
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+}
+.navbar-brand .col-md-3 button
+{
+    color: white;
+    width: 100%;
+    height: 80%;
+    font-weight: 500;
+    font-size: 2vmin;
+    padding: 0px;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+}
+.col-md-10 .row4
+{
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 90%;
+    height: 30%;
+    background: #51515125;
+}
+.row4 .card{
+    margin: 20px;
+    width: 200px;
+}
+.row5
+{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 90%;
+    height: 30%;
+    border: none;
+    background: #51515111;
+}
+.row6 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 90%;
+    height: 30%;
+    border: none;
+    background: linear-gradient(-45deg, rgb(82, 163, 238), #e73cde, #ff8800, #9900ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+.row6 h1{
+    font-weight: 700;
+}
+.design
+{
+    display: grid;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.row4 h2{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .row4 h2{
+        display: none;
+    }
+    .row5 h2{
+        display: none;
+    }
+    .container-fluid{
+        height: 100vh;
+        width: 100%;
+    }
+    .col-md-2{
+        height: 100vh;
+    }
+    .more{
+        height: 34vh;
+    }
+    .col-md-2 .navbar input{
+        width: 90%;
+    }
+    .row3{
+        margin-top: 20px;
+    }
+}
+@media (max-width:1083px) {
+
+    .col-md-2{
+        height: 105vh;
+    }    
+}
+@media (max-width:1019px) {
+
+    .col-md-2{
+        height: 107vh;
+    }
+
+}
+@media (max-width:975px) {
+
+    .col-md-2{
+        width: 10%;
+        height: 100vh;
+    }
+    .navbar h6{
+        display: none;
+    }
+
+    .col-md-2 .navbar input{
+     
+        display: none;
+    }
+
+    .row3 a{
+        
+        display: none;
+    }
+    .col-md-10{
+        width: 90%;
+    }
+    .navbar .card{
+        display: none;
+    }
+
+}
+@media (max-width:768px) {
+    .row4 h2{
+        margin: 0 auto;
+        display: flex;
+    }
+    .row5 h2{
+        margin: 0 auto;
+        display: flex;
+    }
+    .row5 .card{
+        display: none;
+    }
+    .row4 .card{
+        display: none;
+    }
+    .navbar-brand .col-md-9{
+
+        width: 100%;
+    }
+    .navbar-brand .col-md-3{
+        display: flex;
+        justify-content: end;
+    }
+    .navbar-brand .col-md-3 button{
+        
+        padding-left: 15px;
+        padding-right: 19px;
+    }
+}
+@media (max-width:675px) {
+   .more img{
+    display: flex;
+   }
+    
+}
+@media (max-width:480px) {
+
+    .card h6,a{
+        
+        font-size:auto;
+    }
+    .col-md-2{
+
+        width: 15%;
+    }
+    .col-md-10{
+
+        width: 85%;
+    }
+    
+}
+@media (max-width:450px) {
+
+    .more img{
+        display:flex;
+    }
+    .col-md-2{
+        
+        width: 18%;
+    }
+    .col-md-10{
+
+        width: 82%;
+    }
+    .row1{
+        height: 120px;
+    }
+    .row2{
+        height: 120px;
+    }
+    .row1 p{
+        display: none;
+    }
+    .row2 p{
+        display: none;
+    }
+    #More p{
+        display: none;
+    }
+    .row6{
+        margin-left: 50px;
+        width: 80%;
+        height: 25%;
+    }
+    .row5{
+        padding: 0;
+        margin-left: 50px;
+        width: 80%;
+        height: auto;
+    }
+    .design{
+        width: auto;
+        height: auto;
+    }
+    .design .retrive {
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width:375px) {
+    .col-md-2{
+        width: 20%;
+    }
+    .col-md-10{
+        width: 80%;
+    }
+}

@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    justify-content: center;
+    text-align: center;
+}
+.container-fluid h1{
+    font-size: 7vmin;
+}
+.bg-light {
+    background-color: rgba(219, 219, 219, 0.18);
+}
+.col-md-6{
+    border-radius: 20px;
+    background-color: rgba(177, 177, 177, 0.224);
+}
+.vh-100 {
+    height: 100vh;
+}
+.row{
+    padding-bottom: 80px;
+}
+@media (max-width: 576px) {
+    .vh-100 {
+        height: auto; /* For smaller screens, make height auto to fit content */
+    }
+}
